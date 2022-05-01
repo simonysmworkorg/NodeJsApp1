@@ -1,6 +1,7 @@
 #FROM node:16
 #FROM node:10-alpine
-FROM nodejs:16
+#FROM nodejs:16
+FROM ubi8/nodejs-16
 
 # Create app directory
 WORKDIR /usr/src/app
