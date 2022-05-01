@@ -11,7 +11,7 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN adduser node root
+RUN adduser node -G root
 
 RUN npm install
 # If you are building your code for production
