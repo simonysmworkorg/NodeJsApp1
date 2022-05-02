@@ -7,7 +7,7 @@ FROM ubi8/nodejs-16
 #WORKDIR /usr/src/app
 #WORKDIR /opt/app-root/src
 
-cd nodejs/
+
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -16,6 +16,7 @@ COPY package*.json ./
 
 #RUN adduser node -G root
 
+RUN cd nodejs/
 RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
