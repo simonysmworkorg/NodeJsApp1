@@ -18,6 +18,7 @@ COPY package*.json ./
 RUN ls -la
 RUN pwd
 RUN whoami
+RUN groups default
 
 #RUN adduser node -G root
 
