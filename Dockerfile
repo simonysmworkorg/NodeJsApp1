@@ -8,7 +8,7 @@ FROM ubi8/nodejs-16
 #WORKDIR /opt/app-root/src
 
 #RUN mkdir -p ./node_modules
-RUN chmod 664 /opt/app-root/src
+#RUN chmod 664 /opt/app-root/src
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
