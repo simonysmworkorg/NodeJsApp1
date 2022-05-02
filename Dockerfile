@@ -17,7 +17,7 @@ COPY package*.json ./
 #COPY package.json ./
 
 #COPY --chown=default:root package*.json .
-RUN sudo chmod 664 /opt/app-root/src/package*.json
+RUN chown default:root /opt/app-root/src/package*.json
 
 RUN ls -la
 RUN pwd
