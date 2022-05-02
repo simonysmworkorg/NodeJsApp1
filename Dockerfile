@@ -19,6 +19,7 @@ RUN ls -la
 RUN pwd
 RUN whoami
 RUN groups default
+RUN chmod -R 664 /opt/app-root/src
 
 #RUN adduser node -G root
 
