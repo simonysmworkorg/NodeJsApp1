@@ -7,6 +7,8 @@ FROM ubi8/nodejs-16
 #WORKDIR /usr/src/app
 #WORKDIR /opt/app-root/src
 
+cd nodejs/
+
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
