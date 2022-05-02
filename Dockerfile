@@ -16,7 +16,7 @@ COPY package*.json ./
 
 #RUN adduser node -G root
 
-RUN cd nodejs/
+
 RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
